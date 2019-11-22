@@ -1,0 +1,17 @@
+h1 {
+    color: indigo;
+}
+h2 {
+    color: darkblue;
+}
+h3 {
+    color: darkblue;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 24px;
+    text-decoration: none;
+     margin: 4px 2px;
+}
