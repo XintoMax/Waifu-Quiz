@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <meta charset="UTF-8">
     <title>Question 2</title>
 </head>
 <body>
+
 <h2>Question 2:</h2>
 <h3>After discovering the world, you must decide a class. What is your starter class?</h3>
 <form action="/question=3">
 
 
-    <input type="radio" name="group2" value="input1" id="input1">
+    <input type="radio" required name="group2" value="input1" id="input1">
         <label for="input1">Warrior</label><br>
 
     <input type="radio" name="group2" value="input2" id="input2">
@@ -27,6 +28,7 @@
         <label for="input5">Mercenary/Adventurer</label><br>
 
     <input type="submit" value="Submit">
+
 </form>
 
 </body>

@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <meta charset="UTF-8">
     <title>Question 3</title>
 </head>
 <body>
+
 <h2>Question 2:</h2>
 <h3>You briefly remember how you ended up in this new world. How were you like in the real world?</h3>
 <form action="/question=4">
 
-    <input type="radio" name="group3" value="input1" id="input1">
+    <input type="radio" required name="group3" value="input1" id="input1">
         <label for="input1">Weeb/Otaku, Opened book and teleported.</label><br>
 
     <input type="radio" name="group3" value="input2" id="input2">
         <label for="input2">Normal Salary man, Woke up in new world.</label><br>
 
     <input type="radio" name="group3" value="input3" id="input3">
-        <label for="input3">High School Student, Put on Helmet that trapped them in video game.</label><br>
+        <label for="input3">Shut-In/NEET, Death by Heart Attack.</label><br>
 
     <input type="radio" name="group3" value="input4" id="input4">
-        <label for="input4">Shut-In/NEET, Death by Heart Attack.</label><br>
+        <label for="input4">High School Student, Put on Helmet that trapped them in video game.</label><br>
 
     <input type="radio" name="group3" value="input5" id="input5">
         <label for="input5">Business Man, Literally just died.</label><br>
@@ -28,5 +29,6 @@
     <input type="submit" value="Submit">
 
 </form>
+
 </body>
 </html>

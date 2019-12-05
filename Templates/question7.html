@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <meta charset="UTF-8">
+    <title>Question 7</title>
+</head>
+<body>
+
+<h2>Question 7</h2>
+<h3>Finally, what is your end goal? What task do you need to complete to return to the real world?(If you can)</h3>
+<form action="/result">
+
+    <input type="radio" required name="group7" value="input1" id="input1">
+        <label for="input1">Kill a Demon King.</label><br>
+
+    <input type="radio" name="group7" value="input2" id="input2">
+        <label for="input2">Travel the world to protect others and allow for peace to all.</label><br>
+
+    <input type="radio" name="group7" value="input3" id="input3">
+        <label for="input3">Find out why humans transform into demons, and kill the demon transforming them.</label><br>
+
+    <input type="radio" name="group7" value="input4" id="input4">
+        <label for="input4">Rule the world.</label><br>
+
+    <input type="radio" name="group7" value="input5" id="input5">
+        <label for="input5">Reach the last floor of a dungeon tower and escape the game.</label><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

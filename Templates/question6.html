@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <meta charset="UTF-8">
     <title>Question 6</title>
 </head>
 <body>
+
+<h2>Question 6</h2>
+<h3>Vegeta, what does the scouter say about his power level? (How strong were you when you spawned in the world?)</h3>
+<form action="/question=7">
+
+    <input type="radio" required name="group6" value="input1" id="input1">
+        <label for="input1">Level 1, Grinded to 19.</label><br>
+
+    <input type="radio" name="group6" value="input2" id="input2">
+        <label for="input2">Level 100.</label><br>
+
+    <input type="radio" name="group6" value="input3" id="input3">
+        <label for="input3">Level 1, Grinded to 96.</label><br>
+
+    <input type="radio" name="group6" value="input4" id="input4">
+        <label for="input4">The Classic; born op.</label><br>
+
+    <input type="radio" name="group6" value="input5" id="input5">
+        <label for="input5">Level 1, Grinded to 75.</label><br>
+
+    <input type="submit" value="Submit">
+
+</form>
 
 </body>
 </html>

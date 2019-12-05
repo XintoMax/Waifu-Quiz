@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <meta charset="UTF-8">
     <title>Question 1</title>
 </head>
@@ -12,7 +12,7 @@
 <h3>If you got isekai'd, what is the first thing you do?</h3>
 <form action="/question=2">
 
-    <input type="radio" name="group1" value="input1" id="input1">
+    <input type="radio" required name="group1" value="input1" id="input1">
         <label for="input1">Check your surroundings/Plan ahead.</label><br>
 
     <input type="radio" name="group1" value="input2" id="input2">
@@ -28,6 +28,7 @@
         <label for="input5">Move away from larger villages and search for small villages.</label><br>
 
     <input type="submit" value="Submit">
+
 </form>
 
 </body>
